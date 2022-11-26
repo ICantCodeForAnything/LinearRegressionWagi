@@ -14,10 +14,11 @@ print(sys.argv)
 
 args = sys.argv
 if len(args) > 1:
-    print("You've just send the following args as GET parameters!\n")
+    print('You have just send the following args as GET parameters!')
+    print()
     print(sys.argv[1:])
     
-    arg1 = args[1].split("=")[1]
+    arg1 = args[1].split('=')[1]
     print(int(arg1) + 1)
 else:
-    print("You gave me no parameters :(")
+    print('You gave me no parameters :(')
