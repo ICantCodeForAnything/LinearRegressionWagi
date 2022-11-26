@@ -14,7 +14,7 @@ print(sys.argv)
 
 args = sys.argv
 if len(args) > 1:
-    print('You have just send the following args as GET parameters!')
+    print('You have just sent the following args as GET parameters!')
     print()
     print(sys.argv[1:])
     
