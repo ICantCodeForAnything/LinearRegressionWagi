@@ -3,7 +3,7 @@ CACHEDIR := _scratch/cache
 
 .PHONY: serve
 serve:
-	RUST_LOG=wagi=trace ./wagi -e 'PYTHONHOME=/opt/wasi-python/lib/python3.11' -e 'PYTHONPATH=/opt/wasi-python/lib/python3.11' -c modules.toml --module-cache ${CACHEDIR}
+	RUST_LOG=wagi=trace ./wagi -l '0.0.0.0:8080' -e 'PYTHONHOME=/opt/wasi-python/lib/python3.11' -e 'PYTHONPATH=/opt/wasi-python/lib/python3.11' -c modules.toml --module-cache ${CACHEDIR}
 
 .PHONY: run-wasmtime
 run-wasmtime:
